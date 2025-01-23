@@ -5,12 +5,14 @@
 'https://github.com/alxsvxn/VariablesAndDataTypesAndStuff.git
 
 Option Explicit On
+'Option Strict on
 Module VariablesAndDataTypesAndStuff
 
     Sub Main()
 
         Dim jellyBeans As Integer
         Dim laffyTaffy As Integer
+        Dim money As Decimal
 
         Console.WriteLine(jellyBeans) 'ConsoleWrite will display the value of "jellyBeans" which is 0
 
@@ -26,7 +28,10 @@ Module VariablesAndDataTypesAndStuff
         laffyTaffy = 26 'If we don't assign laffyTaffy as an integer (Line 13) this line of code won't work
         Console.WriteLine(laffyTaffy)
 
+        money = 9.1283726802986 'floating point number
+        jellyBeans = 1.56
 
+        Console.WriteLine()
     End Sub
 
 End Module
