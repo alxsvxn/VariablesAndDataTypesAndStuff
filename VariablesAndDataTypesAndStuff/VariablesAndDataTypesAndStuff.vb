@@ -1,10 +1,13 @@
-﻿'Alexis Villagran 
+﻿Option Explicit On
+'Alexis Villagran 
 'Spring 2025
 'RCET 2265
 'Variables, Data Types, & stuff
 'https://github.com/alxsvxn/VariablesAndDataTypesAndStuff.git
 
-Option Explicit On
+Imports System.Security.Authentication
+
+
 'Option Strict on
 Module VariablesAndDataTypesAndStuff
 
@@ -13,6 +16,7 @@ Module VariablesAndDataTypesAndStuff
         Dim jellyBeans As Integer
         Dim laffyTaffy As Integer
         Dim money As Decimal
+        Dim studentName As String
 
         Console.WriteLine(jellyBeans) 'ConsoleWrite will display the value of "jellyBeans" which is 0
 
@@ -29,7 +33,10 @@ Module VariablesAndDataTypesAndStuff
         Console.WriteLine(laffyTaffy)
 
         money = 9.1283726802986 'floating point number
-        jellyBeans = 1.56
+        jellyBeans = CInt(1.56)
+        studentName = "7" 'At first we had "jimmothy" in between the quotations but that crashed the program because 'jimmothy' cannot be converted
+
+        'jellyBeans = CInt(studentName) 'If we remove the apostr. it will override our integer value of 1.56(2) to 7 because we are overriding it here
 
         Console.WriteLine()
     End Sub
