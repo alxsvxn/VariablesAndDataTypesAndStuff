@@ -17,6 +17,7 @@ Module VariablesAndDataTypesAndStuff
         Dim laffyTaffy As Integer
         Dim money As Decimal
         Dim studentName As String
+        Dim userInput As String
 
         Console.WriteLine(jellyBeans) 'ConsoleWrite will display the value of "jellyBeans" which is 0
 
@@ -38,7 +39,13 @@ Module VariablesAndDataTypesAndStuff
 
         'jellyBeans = CInt(studentName) 'If we remove the apostr. it will override our integer value of 1.56(2) to 7 because we are overriding it here
 
-        Console.WriteLine()
+        Console.WriteLine("Please enter an exotic fruit.")
+        userInput = Console.ReadLine()
+
+        'Console.WriteLine("You have chosen the exotic fruit of " & userInput)
+        'or
+        Console.WriteLine($"You have chose the exotic fruit of {userInput}.")
+
     End Sub
 
 End Module
